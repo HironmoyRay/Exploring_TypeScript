@@ -41,3 +41,9 @@ b = {
     age:23,
     adult:true,
 }
+
+
+const myFunc = (a:string,b:string) =>{
+    console.log(`Hello ${a} ${b}`);
+}
+myFunc("Hironmoy","Ray")

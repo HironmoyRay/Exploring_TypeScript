@@ -26,3 +26,7 @@ b = {
     age: 23,
     adult: true,
 };
+const myFunc = (a, b) => {
+    console.log(`Hello ${a} ${b}`);
+};
+myFunc("Hironmoy", "Ray");
