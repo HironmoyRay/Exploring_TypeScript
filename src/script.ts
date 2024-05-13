@@ -47,3 +47,14 @@ const myFunc = (a:string,b:string) =>{
     console.log(`Hello ${a} ${b}`);
 }
 myFunc("Hironmoy","Ray")
+
+// Type Aliases
+
+type stringOrNumber = string | number;
+type userType = {name:string;age:number };
+
+const userDetails = (id: stringOrNumber , user: userType)=>{
+    console.log(`User id is ${id} & name is ${user.name} and age is ${user.age}`)
+}
+
+userDetails(1 , {name:"hironmoy",age:34})

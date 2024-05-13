@@ -30,3 +30,7 @@ const myFunc = (a, b) => {
     console.log(`Hello ${a} ${b}`);
 };
 myFunc("Hironmoy", "Ray");
+const userDetails = (id, user) => {
+    console.log(`User id is ${id} & name is ${user.name} and age is ${user.age}`);
+};
+userDetails(1, { name: "hironmoy", age: 34 });
