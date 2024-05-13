@@ -34,3 +34,14 @@ const userDetails = (id, user) => {
     console.log(`User id is ${id} & name is ${user.name} and age is ${user.age}`);
 };
 userDetails(1, { name: "hironmoy", age: 34 });
+// Function Signature
+let myResult;
+myResult = (reg, student) => {
+    if (student.marks > 33) {
+        return "Pass";
+    }
+    else {
+        return "Fail";
+    }
+};
+console.log(myResult(111111, { name: "HP", roll: 10, marks: 34 }));

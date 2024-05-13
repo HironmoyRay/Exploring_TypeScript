@@ -58,3 +58,26 @@ const userDetails = (id: stringOrNumber , user: userType)=>{
 }
 
 userDetails(1 , {name:"hironmoy",age:34})
+
+
+// Function Signature
+let myResult:(reg:string | number, student:{
+    name:string,
+    roll: number,
+    marks: number
+} ) => string;
+
+myResult = (reg:string|number, student:{
+    name:string,
+    roll:number,
+    marks:number
+})=>{
+    if(student.marks>33){
+        return "Pass";
+    }
+    else{
+        return "Fail"
+    }
+}
+
+console.log(myResult(111111,{name:"HP", roll:10, marks:34}))
