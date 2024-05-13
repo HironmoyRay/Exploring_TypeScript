@@ -17,3 +17,12 @@ const person = {
     captain: true,
 };
 person.age = 24;
+let a = [];
+a.push("apple", 12);
+console.log(a);
+let b;
+b = {
+    name: "Hironmoy",
+    age: 23,
+    adult: true,
+};

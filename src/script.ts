@@ -24,3 +24,20 @@ const person={
 }
 
 person.age=24;
+
+
+let a:(string | number)[] = [];
+a.push("apple",12)
+console.log(a);
+
+let b: {
+    name:string,
+    age:number,
+    adult: boolean,
+}
+
+b = {
+    name:"Hironmoy",
+    age:23,
+    adult:true,
+}
