@@ -57,6 +57,14 @@ console.log(myResult(111111, { name: "HP", roll: 10, marks: 34 }));
 import { Player } from "./classes/Player.js";
 const Hironmoy = new Player("Hironmoy", 34, "Bangladesh");
 console.log(Hironmoy.age);
-// Use class as type 
+// Use class as type
 // const array:string[] = [];
 const players = [];
+class UserAccount {
+    constructor(n, i) {
+        this.name = n;
+        this.id = i;
+    }
+}
+const user = new UserAccount("Hironmoy", 45);
+console.log(user.id);
