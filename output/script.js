@@ -1,4 +1,3 @@
-"use strict";
 console.log("Hello World");
 let playerName;
 console.log(typeof playerName);
@@ -55,14 +54,8 @@ console.log(myResult(111111, { name: "HP", roll: 10, marks: 34 }));
 //         this.country=c;
 //     }
 // }
-class player {
-    constructor(name, age, country) {
-        this.name = name;
-        this.age = age;
-        this.country = country;
-    }
-}
-const Hironmoy = new player("Hironmoy", 34, "Bangladesh");
+import { Player } from "./classes/Player.js";
+const Hironmoy = new Player("Hironmoy", 34, "Bangladesh");
 console.log(Hironmoy.age);
 // Use class as type 
 // const array:string[] = [];

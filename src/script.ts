@@ -94,21 +94,13 @@ console.log(myResult(111111,{name:"HP", roll:10, marks:34}))
 //     }
 // }
 
-class player{
-    constructor(
-        private name: string,
-        public age: number,
-        readonly country: string,
-    ){
+import {Player} from "./classes/Player.js"
 
-    }
-}
-
-const Hironmoy = new player("Hironmoy", 34, "Bangladesh");
+const Hironmoy = new Player("Hironmoy", 34, "Bangladesh");
 
 console.log(Hironmoy.age);
 
 // Use class as type 
 // const array:string[] = [];
 
-const players: player[]=[];
+const players: Player[]=[];
