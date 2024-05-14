@@ -81,3 +81,26 @@ myResult = (reg:string|number, student:{
 }
 
 console.log(myResult(111111,{name:"HP", roll:10, marks:34}))
+
+class player {
+    name: string;
+    age: number;
+    country: string;
+
+    constructor(n:string, a:number, c:string){
+        this.name=n;
+        this.age=a;
+        this.country=c;
+    }
+
+    play(){
+        console.log(`${this.name} from ${this.country} is playing`)
+    }
+}
+
+const Hironmoy = new player("Hironmoy", 34, "Bangladesh");
+
+// Use class as type 
+// const array:string[] = [];
+
+const players: player[]=[];
