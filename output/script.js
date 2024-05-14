@@ -45,17 +45,25 @@ myResult = (reg, student) => {
     }
 };
 console.log(myResult(111111, { name: "HP", roll: 10, marks: 34 }));
+// class player {
+//     name: string;
+//     age: number;
+//     country: string;
+//     constructor(n:string, a:number, c:string){
+//         this.name=n;
+//         this.age=a;
+//         this.country=c;
+//     }
+// }
 class player {
-    constructor(n, a, c) {
-        this.name = n;
-        this.age = a;
-        this.country = c;
-    }
-    play() {
-        console.log(`${this.name} from ${this.country} is playing`);
+    constructor(name, age, country) {
+        this.name = name;
+        this.age = age;
+        this.country = country;
     }
 }
 const Hironmoy = new player("Hironmoy", 34, "Bangladesh");
+console.log(Hironmoy.age);
 // Use class as type 
 // const array:string[] = [];
 const players = [];
